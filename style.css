@@ -1,0 +1,80 @@
+body {
+    padding: 0 !important;
+    --md-alert-info-bg-color: #C9F4FF;
+    --md-primary-text-color: #121212;
+    --alert-banner-error-bg-color: #FFE8E3;
+}
+
+
+input {
+    background: var(--md-alert-info-bg-color) !important;
+}
+
+.fr-view p:first-child {
+    margin-top: 0px;
+}
+
+.spnhighlight.pristine {
+    color: #808080ab !important;
+}
+
+.spnhighlight {
+    min-width: 20px;
+    display: inline-block;
+    min-height: 16px;
+    margin-bottom: 1px;
+    outline: none !important;
+}
+
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #00FF00;
+    color: #111;
+    font-size: 150%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+[data-title] {
+    position: relative;
+}
+
+.text-color-none {
+    color: transparent !important;
+}
+
+
+.highlight {
+    background: var(--md-alert-info-bg-color) !important;
+}
+
+.fr-box.fr-basic {
+    border-radius: 0px;
+}
+
+input {
+    color: var(--md-primary-text-color) !important;
+}
+
+input:focus {
+    outline: 0px !important;
+}
+
+.error {
+    background: var(--alert-banner-error-bg-color) !important;
+}
